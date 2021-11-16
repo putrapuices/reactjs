@@ -8,6 +8,7 @@ class Main extends Component {
       title2: "Menu Minuman",
     };
     this.rubahData = this.rubahData.bind(this);
+    this.handleChange = this.handleChange.bind(this);
   }
   //   cara pertama
   //   rubahData() {
@@ -20,12 +21,20 @@ class Main extends Component {
       return { title: state.title2, title2: state.title };
     });
   }
+
+  handleChange() {
+    console.log("Jalan");
+  }
   render() {
     return (
       <div>
         <h3>{this.state.title}</h3>
         <h2>{this.state.title2}</h2>
         <button onClick={this.rubahData}>Rubah Data</button>
+
+        <br />
+        <br />
+        <input type="text" onChange={this.handleChange} />
       </div>
     );
   }
