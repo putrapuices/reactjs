@@ -3,6 +3,7 @@ import Header from "./Header"
 import Footer from "./Footer";
 import List from "./List";
 import Top from "./Top";
+import Main from "./Main";
 
 // function App() {
 //   return (
@@ -50,6 +51,7 @@ class App extends Component {
       <div>
         <Header list="3 terbaik"/>
         <Top/>
+        <Main/>
         <List/>
         <Footer name="Masakan Nusantara" tahun="1992"/>
       </div>

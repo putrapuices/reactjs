@@ -24,7 +24,7 @@ class Header extends Component{
           <p>{this.state.datalist} = dipanngil langsung dengan state</p>
           <a href="/" onClick={this.handlePesan}>Halaman ini Header</a>
           <br/>
-          // untuk parameter e bisa ditukar jd event
+          {/* // untuk parameter e bisa ditukar jd event */}
           <a href="/" onClick={(e)=>this.handlePesan("Pesan ini dari Header ya",e)}>Halaman ini Header 2</a>
 
         </div>
