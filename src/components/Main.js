@@ -22,8 +22,8 @@ class Main extends Component {
     });
   }
 
-  handleChange() {
-    console.log("Jalan");
+  handleChange(e) {
+    console.log(e.target.value);
   }
   render() {
     return (
