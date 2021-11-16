@@ -1,0 +1,13 @@
+untuk membuat import react compont
+import React, { Component } from "react";
+jika yang di atas ing dirubah seperti dbwah ini
+import React from "react";
+maka pada componentnya ditambahak
+class Header extends Component{
+    ,.......
+}
+    menjadi
+    class Header extends React.Component{
+    ,.......
+}
+

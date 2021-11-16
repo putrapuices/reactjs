@@ -1,0 +1,50 @@
+npm init
+code .
+git init
+git add .
+git commit -m 'first commit'
+git push -f origin master
+git push -u origin master --force
+ npm install --save express mysql body-parser
+
+git add .
+
+git commit -m "mengintall package express mysql dan body-parser"  
+git push origin
+
+touch server.js
+
+install plugin codevideo expressjs
+
+node server.js
+
+
+====================
+create-react-app hello-react
+
+git branch -avv
+git branch main 
+git checkout main (pindah branch)
+git remote rm main(hapus remote)
+
+
+git remote set-url origin git://github.com/YourDirectory/YourProject.git
+git remote add origin git@github.com:YOUR-GIT/YOUR-REPO.git
+
+npm start (untuk react)
+=======================================
+git pull origin main (mengambil dr github dan digabungkan ke local)
+-----------------------
+git fetch origin main(mengambil dr github tp  tdk menggabungkan lgnsung k local)
+git log --onlie
+Bila ingin mengecek apa saja perbedaannya, coba gunakan perintah git diff.
+git diff master github/master
+Keterangan:
+master adalah cabang master di repository lokal.
+github/master adalah cabang master di repository remote.
+Lalu sekarang bagaimana cara kita menggabungkan commit dari repository remote dengan lokal?
+
+Gunakan perintah git merge.
+
+git merge master github/master
+Setelah itu coba ketik ls dan git log lagi…
