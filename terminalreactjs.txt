@@ -47,4 +47,9 @@ Lalu sekarang bagaimana cara kita menggabungkan commit dari repository remote de
 Gunakan perintah git merge.
 
 git merge master github/master
-Setelah itu coba ketik ls dan git log lagi…
+Setelah itu coba ketik ls dan git log lagiï¿½
+
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+
+git push --set-upstream origin main
