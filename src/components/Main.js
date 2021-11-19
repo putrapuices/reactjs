@@ -24,7 +24,16 @@ class Main extends Component {
   }
 
   handleChange(e) {
-    console.log(e.target.value);
+    //penulisan dengan cara object setStatenya
+    // this.setState({inputValue:e.target.value});
+    // console.log(e.target.value);
+    //penulisan dengan errow function
+    const EventTarget = e.target.value;
+    this.setState((state, props) => {
+      return {
+        inputValue: EventTarget,
+      };
+    });
   }
   render() {
     return (
