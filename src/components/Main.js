@@ -6,7 +6,8 @@ class Main extends Component {
     this.state = {
       title: "Menu Makanan",
       title2: "Menu Minuman",
-      inputValue: "Nasi Padang",
+      inputValue: "",
+      inputKota:""
     };
     this.rubahData = this.rubahData.bind(this);
     this.handleChange = this.handleChange.bind(this);
@@ -22,18 +23,19 @@ class Main extends Component {
       return { title: state.title2, title2: state.title };
     });
   }
-
-  handleChange(e) {
+// ditambah params value untuk menghadle dynami method dr form kota dan nama
+  handleChange(value,e) {
     //penulisan dengan cara object setStatenya
     // this.setState({inputValue:e.target.value});
-    // console.log(e.target.value);
+    this.setState({[value]:e.target.value});
+    console.log(e.target.value);
     //penulisan dengan errow function
-    const EventTarget = e.target.value;
-    this.setState((state, props) => {
-      return {
-        inputValue: EventTarget,
-      };
-    });
+    // const EventTarget = e.target.value;
+    // this.setState((state, props) => {
+    //   return {
+    //     inputValue: EventTarget,
+    //   };
+    // });
   }
   render() {
     return (
@@ -44,10 +46,25 @@ class Main extends Component {
 
         <br />
         <br />
-        <input
+        {/* <input
           type="text"
           value={this.state.inputValue}
           onChange={this.handleChange}
+        /> */}
+{/* agar method hanlde change dynamic maka dibuat seperti dibawah */}
+<input
+          type="text"
+          value={this.state.inputValue}
+          onChange={e=>this.handleChange("inputValue",e)}
+        placeholder="nama"
+
+        />
+
+      
+        <input
+        type="text" value={this.state.inputKota}
+        onChange={e=>this.handleChange("inputKota",e)}
+        placeholder="kota"
         />
       </div>
     );
