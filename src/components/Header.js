@@ -9,6 +9,7 @@ class Header extends Component{
       statusRendering: true,
     };
     this.handlePesan = this.handlePesan.bind(this);
+    this.handleElement = this.handleElement.bind(this);
   }
 
   handlePesan(value,e){
@@ -21,8 +22,15 @@ class Header extends Component{
     console.log("Jalana Componentn Did Mount");
   }
 
+  handleElement(){
+    this.setState((state,props)=>{
+      return {statusRendering:!state.statusRendering};
+    });
+  }
+
     render(){
       console.log("Jalana : Render ya...");
+      console.log(this.state.statusRendering);
       return(
         <>
         <div>
@@ -32,9 +40,13 @@ class Header extends Component{
           <h1>Silahkan Pilih Menu Makanan</h1>
           </>
         ):(
+          <>
           <h1>Selamat Tinggal</h1>
+          <h1>Jangan Lupa Datang Kembali</h1>
+          </>
           
         )}
+        <button onClick={this.handleElement}>CHANGE</button>
       </div>
         <div>
           <h2>Makanan Khas Indonesia</h2>
