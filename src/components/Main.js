@@ -56,6 +56,7 @@ class Main extends Component {
     // });
   }
   render() {
+    console.log(this.props.menuMakanan2);
     return (
       <div>
         <h3>{this.state.title}</h3>
@@ -85,6 +86,17 @@ class Main extends Component {
         />
 
         {this.state.menuMakanan.map((value, index) => {
+          console.log(value);
+          return (
+            <div key={index}>
+              <p>No : {index + 1}</p>
+              <p>Nama Makanan : {value.nama}</p>
+              <p>Harga : {value.harga}</p>
+            </div>
+          );
+        })}
+
+        {this.props.menuMakanan2.map((value, index) => {
           console.log(value);
           return (
             <div key={index}>

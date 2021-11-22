@@ -55,3 +55,5 @@ git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
 
 git push --set-upstream origin main
+
+link https://www.hostinger.co.id/tutorial/tutorial-git-dasar-cara-menggunakan-git

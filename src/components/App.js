@@ -51,7 +51,21 @@ class App extends Component {
       <div>
         <Header list="3 terbaik"/>
         <Top/>
-        <Main/>
+        <Main menuMakanan2={[
+          {
+            nama: "Mie Den",
+            harga: 10000,
+          },
+          {
+            nama: "Bakso",
+            harga: 20000,
+          },
+          {
+            nama: "Mie Den Bakso",
+            harga: 10000,
+          },
+         
+        ]}/>
         <List/>
         <Footer name="Masakan Nusantara" tahun="1992"/>
       </div>
