@@ -1,20 +1,20 @@
 import React, { Component } from "react";
+import menuMakananeksternalfile from "./lib/Foot";
 
-const menuMakananinternalfile =[
+const menuMakananinternalfile = [
   {
-    nama:"Mie Ayam internal file",
-    harga:10000
+    nama: "Mie Ayam internal file",
+    harga: 10000,
   },
   {
-    nama:"Mie Ayam1 internal file",
-    harga:20000
+    nama: "Mie Ayam1 internal file",
+    harga: 20000,
   },
   {
-    nama:"Mie Ayam2 internal file",
-    harga:30000
-  }
+    nama: "Mie Ayam2 internal file",
+    harga: 30000,
+  },
 ];
-
 
 class Main extends Component {
   constructor(props) {
@@ -123,7 +123,18 @@ class Main extends Component {
           );
         })}
 
-{menuMakananinternalfile.map((value, index) => {
+        {menuMakananinternalfile.map((value, index) => {
+          console.log(value);
+          return (
+            <div key={index}>
+              <p>No : {index + 1}</p>
+              <p>Nama Makanan : {value.nama}</p>
+              <p>Harga : {value.harga}</p>
+            </div>
+          );
+        })}
+
+        {menuMakananeksternalfile.map((value, index) => {
           console.log(value);
           return (
             <div key={index}>
