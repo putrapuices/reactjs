@@ -5,7 +5,8 @@ class Header extends Component{
     super(props);
     this.state ={
       daftar : "Daftar Makanan Nusantara",
-      datalist: this.props.list
+      datalist: this.props.list,
+      statusRendering: false,
     };
     this.handlePesan = this.handlePesan.bind(this);
   }
@@ -19,9 +20,18 @@ class Header extends Component{
   componentDidMount(){
     console.log("Jalana Componentn Did Mount");
   }
+
     render(){
       console.log("Jalana : Render ya...");
       return(
+        <>
+        <div>
+        {this.state.statusRendering === false ?(
+          <h1>Selamat Datang</h1>
+        ):(
+          <h1>Selamat Tinggal</h1>
+        )}
+      </div>
         <div>
           <h2>Makanan Khas Indonesia</h2>
           <p>{this.state.daftar}</p>
@@ -33,6 +43,7 @@ class Header extends Component{
           <a href="/" onClick={(e)=>this.handlePesan("Pesan ini dari Header ya",e)}>Halaman ini Header 2</a>
 
         </div>
+        </>
       )
     }
   }
