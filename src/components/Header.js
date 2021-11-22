@@ -7,6 +7,7 @@ class Header extends Component{
       daftar : "Daftar Makanan Nusantara",
       datalist: this.props.list,
       statusRendering: true,
+      date:new Date()
     };
     this.handlePesan = this.handlePesan.bind(this);
     this.handleElement = this.handleElement.bind(this);
