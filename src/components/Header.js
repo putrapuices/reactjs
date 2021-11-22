@@ -6,7 +6,7 @@ class Header extends Component{
     this.state ={
       daftar : "Daftar Makanan Nusantara",
       datalist: this.props.list,
-      statusRendering: false,
+      statusRendering: true,
     };
     this.handlePesan = this.handlePesan.bind(this);
   }
@@ -26,10 +26,14 @@ class Header extends Component{
       return(
         <>
         <div>
-        {this.state.statusRendering === false ?(
+        {this.state.statusRendering === true ?(
+          <>
           <h1>Selamat Datang</h1>
+          <h1>Silahkan Pilih Menu Makanan</h1>
+          </>
         ):(
           <h1>Selamat Tinggal</h1>
+          
         )}
       </div>
         <div>
