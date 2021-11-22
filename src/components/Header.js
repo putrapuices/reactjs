@@ -15,7 +15,12 @@ class Header extends Component{
     alert(this.state.daftar);
     alert(value);
   }
+
+  componentDidMount(){
+    console.log("Jalana Componentn Did Mount");
+  }
     render(){
+      console.log("Jalana : Render ya...");
       return(
         <div>
           <h2>Makanan Khas Indonesia</h2>
