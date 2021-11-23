@@ -8,6 +8,7 @@ class CustomInput extends Component {
     };
 
     this.handleInput = this.handleInput.bind(this);
+    this.handleChange = this.handleChange.bind(this);
     this.textInput = React.createRef();
   }
 
@@ -16,10 +17,15 @@ class CustomInput extends Component {
       this.textInput.current.focus();
   }
 
+  handleChange(e){
+      this.setState ({value: e.target.value});
+  }
+
   render() {
     return (
       <div>
-        <input type="text" value={this.state.value} ref={this.textInput}/>
+        <input type="text" value={this.state.value} ref={this.textInput}
+        onChange={this.handleChange}/>
         <button onClick={this.handleInput}>Kirim</button>
       </div>
     );
