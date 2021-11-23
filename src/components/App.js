@@ -5,6 +5,7 @@ import List from "./List";
 import Top from "./Top";
 import Main from "./Main";
 import Form from "./Form";
+import CustomInput from "./CustomInput";
 
 // function App() {
 //   return (
@@ -52,6 +53,7 @@ class App extends Component {
       <div>
         <Header list="3 terbaik"/>
         <Top/>
+        <CustomInput/>
         <Form/>
         <Main menuMakanan2={[
           {
