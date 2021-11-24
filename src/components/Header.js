@@ -60,7 +60,7 @@ class Header extends Component {
           ) : (
             <>
               <h1 id="judulKedua">Selamat Tinggal</h1>
-              <h1>Jangan Lupa Datang Kembali</h1>
+              <h1 className="judulInfo">Jangan Lupa Datang Kembali</h1>
             </>
           )}
           <button onClick={this.handleElement}>CHANGE</button>
