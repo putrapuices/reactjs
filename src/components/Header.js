@@ -1,5 +1,12 @@
 import React, { Component } from "react";
 
+// penulisan css secara internal
+const judul = {
+  color: "orange",
+  backgroundColor: "blue",
+  marginTop: "4px",
+};
+
 class Header extends Component {
   constructor(props) {
     super(props);
@@ -47,7 +54,7 @@ class Header extends Component {
               >
                 Selamat Datang
               </h1>
-              <h1>Silahkan Pilih Menu Makanan</h1>
+              <h1 style={judul}>Silahkan Pilih Menu Makanan</h1>
             </>
           ) : (
             <>
