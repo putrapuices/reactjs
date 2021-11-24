@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./Header.css";
 
 // penulisan css secara internal
 const judul = {
@@ -58,7 +59,7 @@ class Header extends Component {
             </>
           ) : (
             <>
-              <h1>Selamat Tinggal</h1>
+              <h1 id="judulKedua">Selamat Tinggal</h1>
               <h1>Jangan Lupa Datang Kembali</h1>
             </>
           )}
