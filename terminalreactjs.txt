@@ -86,3 +86,29 @@ git push -u origin main
 git remote add origin git@github.com:putrapuices/java.git
 git branch -M main
 git push -u origin main
+
+==================untuk error login resository-==============
+fatal: Not a valid object name: 'master'
+This error happens when trying to create a branch when there is no master branch.   
+
+Let’s take a look at an example:
+
+$ git init 
+Initialized empty Git repository in /Users/amir/gitdemo/.git/ 
+$ git branch feature-1 
+fatal: Not a valid object name: 'master'.
+A master branch is created after our first commit.  Let’s commit a file and check the branch list:
+
+$ touch test.txt
+$ git add test.txt 
+$ git commit -m "First commit" 
+[master (root-commit) dffc881] First commit  
+ 1 file changed, 0 insertions(+), 0 deletions(-)  
+ create mode 100644 test.txt 
+$ git branch 
+* master
+Since master has been created, we can now create a branch:
+
+$ git branch feature-1 
+$ git checkout feature-1
+Switched to branch 'feature-1'
