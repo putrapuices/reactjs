@@ -11,3 +11,34 @@ class Header extends Component{
     ,.......
 }
 
+untuk menginstall router
+npm install --save react-route-dom
+atau
+npm install -g npm 
+
+bersihkan cache dengan
+npm cache clean --force
+instal versi terbaru npm secara global sebagai admin:
+npm install -g npm@latest --force
+bersihkan cache dengan
+
+npm cache clean --force
+Coba instal komponen Anda sekali lagi.
+
+untuk memer baik 
+1- In Angular stopping ng sdan in React stopping npm start biasanya menyelesaikan masalah ini karena biasanya kesalahan ini terjadi jika server pengembangan menjalankan proyek karena mengunci beberapa file & kemudian npm tidak dapat memperbaruinya sehingga menimbulkan kesalahan ini
+
+2- Jika cara di atas tidak berhasil, coba tutup editor kode yang memiliki ruang kerja terbuka di dalamnya (mungkin itu mengunci beberapa file atau sesuatu)
+
+Jadi coba tutup editor kode & jalankan:
+
+npm install
+3 - Jika masih tidak berhasil, mungkin Anda dapat mencoba --forceopsi
+
+npm install --force
+ npm audit fix --force
+
+
+ ===========================================
+tutorial sama dengan niomic kelas react js
+https://aufaroot18.medium.com/catatan-perjalanan-belajar-react-js-70bd9b86f070
